@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="src/css/style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="dist/app.js"></script>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container">
+          <a class="navbar-brand text-white" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+              <a class="nav-link text-white" href="#">Features</a>
+              <a class="nav-link text-white" href="#">Pricing</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="container mt-5">
+        <div class="row">
+            <div class="col-8 d-none d-md-block">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="https://cdn5.vectorstock.com/i/1000x1000/68/24/a-happy-family-vector-21946824.jpg" 
+                        class="img-fluid" 
+                        alt="Happy family">
+                    </div>
+                  </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <form class="row g-3" id="signin-form">
+                            <div class="col-12">
+                              <label for="signInEmail" class="form-label">Email</label>
+                              <input type="email" class="form-control" id="signInEmail">
+                            </div>
+                            <div class="col-12">
+                              <label for="signInPassword" class="form-label">Password</label>
+                              <input type="password" class="form-control" id="signInPassword">
+                            </div>
+                            <div class="col-12">
+                              <label for="userCity" class="form-label">State</label>
+                              <select id="userCity" class="form-select">
+                                <option selected>Choose...</option>
+                                <option value="Plovdiv">Пловдив</option>
+                                <option value="Sofia">София</option>
+                                <option value="Varna">Варна</option>
+                              </select>
+                              <div id="windSpeed"></div>
+                            </div>
+                          
+                            <div class="col-12">
+                                <div class="d-flex">
+                                    <button id="signInSubmit" type="button" class="btn btn-success flex-grow-1 me-1">Sign in</button>
+                                    <button type="button" class="btn btn-outline-secondary flex-grow-1 ms-1">Secondary</button>
+                                </div>
+                                <div id="error-message"
+                                 class="alert alert-danger d-none mt-3" role="alert">
+                                  Something went wrong
+                                </div>
+                            </div>
+                          </form>
+                    </div>
+                  </div>
+                  <div class="card d-flex align-items-center p-3 mt-3">
+                    <div class="d-flex">
+                        <div class="p-3 d-flex align-items-center justify-content-center">
+                            <div class="circle-content bg-primary rounded-circle"></div>    
+                        </div>
+
+                        <div class="px-1 py-3 d-flex align-items-center justify-content-center flex-column">
+                            <div class="bg-success px-3 py-1">
+                                <h5 class="text-white mb-0">Hello</h5> 
+                            </div>
+                            <div class="bg-info px-3 py-1 mt-2">
+                                <p class="text-white mb-0 text-center">Master course 2022</p>   
+                            </div>
+                        </div>
+                        
+                        <div class="p-3 d-flex align-items-center justify-content-center">
+                            <div class="circle-content bg-primary rounded-circle"></div>    
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center w-100">
+                        <div class="bg-warning p-3 flex-grow-1 mx-1"></div>
+                        <div class="bg-warning p-3 flex-grow-1 mx-1"></div>
+                        <div class="bg-warning p-3 flex-grow-1 mx-1"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="bg-dark mt-5 py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-3">
+                    <div class="bg-white p-3 my-1"></div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="bg-white p-3 my-1"></div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="bg-white p-3 my-1"></div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="bg-white p-3 my-1"></div>
+                </div>
+            </div>
+        </div>
+      </div>
+  
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  </body>
+</html>
